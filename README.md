@@ -10,12 +10,16 @@ Down load apache tomcat from the [here](https://tomcat.apache.org/download-10.cg
 ### Follow the steps below to set up the environment
 Copy the location of Tomcat where it was saved during installation
 Add the path to java jdk in the environment variables.
-![java_home](https://user-images.githubusercontent.com/32780232/117436960-6c702f00-aee4-11eb-8592-6e6d6657bea2.png) 
+![java_home](https://user-images.githubusercontent.com/32780232/117436960-6c702f00-aee4-11eb-8592-6e6d6657bea2.png)
+
 Add Tomcat location to the environment variables as below
 ![catalina_home](https://user-images.githubusercontent.com/32780232/117437003-772ac400-aee4-11eb-9027-60ae42cac9d4.png) 
+
 Add the path to the servlet.jar lib and bin folder
 ![user_path](https://user-images.githubusercontent.com/32780232/117437026-801b9580-aee4-11eb-8515-48c9f5764143.png)
+
 ![add_path](https://user-images.githubusercontent.com/32780232/117437048-89a4fd80-aee4-11eb-9b27-e141be725777.png)
+
 Add Tomcat lib folder location
 ![class_path](https://user-images.githubusercontent.com/32780232/117437055-8dd11b00-aee4-11eb-8494-7f4a948f51f3.png)
 ### To run the Project
