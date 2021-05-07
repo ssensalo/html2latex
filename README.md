@@ -8,8 +8,8 @@ Project Requirements
 
 Down load apache tomcat from the [here](https://tomcat.apache.org/download-10.cgi). During the installation make sure to create a default admin username and password.
 ### Follow the steps below to set up the environment
-Copy the location of Tomcat where it was saved during installation
-Add the path to java jdk in the environment variables.
+Copy the location of Tomcat where it was saved during installation.
+Add the path to java jdk in the environment variables.\
 ![java_home](https://user-images.githubusercontent.com/32780232/117436960-6c702f00-aee4-11eb-8592-6e6d6657bea2.png)
 
 Add Tomcat location to the environment variables as below
