@@ -15,13 +15,13 @@ Add the path to java jdk in the environment variables.\
 Add Tomcat location to the environment variables as below
 ![catalina_home](https://user-images.githubusercontent.com/32780232/117437003-772ac400-aee4-11eb-9027-60ae42cac9d4.png) 
 
+Add Tomcat lib folder location
+![class_path](https://user-images.githubusercontent.com/32780232/117437055-8dd11b00-aee4-11eb-8494-7f4a948f51f3.png)
+
 Add the path to the servlet.jar lib and bin folder
 ![user_path](https://user-images.githubusercontent.com/32780232/117437026-801b9580-aee4-11eb-8515-48c9f5764143.png)
 
 ![add_path](https://user-images.githubusercontent.com/32780232/117437048-89a4fd80-aee4-11eb-9b27-e141be725777.png)
-
-Add Tomcat lib folder location
-![class_path](https://user-images.githubusercontent.com/32780232/117437055-8dd11b00-aee4-11eb-8494-7f4a948f51f3.png)
 ### To run the Project
 Place the project root folder in C:\Program Files\Apache Software Foundation\Tomcat 10.0\webapps 
 In your terminal change directory to C:\Program Files\Apache Software Foundation\Tomcat 10.0\bin and run the command below
