@@ -4,7 +4,7 @@
 ## Step-up
 Project Requirements\
 [Java](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)\
-[Tomcat](https://tomcat.apache.org/download-10.cgi)\
+[Tomcat](https://tomcat.apache.org/download-10.cgi)
 
 Down load apache tomcat from the [here](https://tomcat.apache.org/download-10.cgi). During the installation make sure to create a default admin username and password.
 ### Follow the steps below to set up the environment
