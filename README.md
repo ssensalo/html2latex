@@ -23,7 +23,7 @@ Add the path to the servlet.jar lib and bin folder
 
 ![add_path](https://user-images.githubusercontent.com/32780232/117437048-89a4fd80-aee4-11eb-9b27-e141be725777.png)
 ### To run the Project
-Place the project root folder in C:\Program Files\Apache Software Foundation\Tomcat 10.0\webapps 
+Place the project root folder in C:\Program Files\Apache Software Foundation\Tomcat 10.0\webapps.<br/>
 In your terminal change directory to C:\Program Files\Apache Software Foundation\Tomcat 10.0\bin and run the command below
 ```bash
 startup.bat
