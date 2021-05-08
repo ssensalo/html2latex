@@ -1,0 +1,12 @@
+\documentclass{article}
+\usepackage{xcolor}
+
+
+\begin{document}
+        This is my first paragraph.\par
+         This is my second paragraph.\par
+         I am in \textbf{bold}.\par
+         I am in \emph{italics}.\par
+         This is a      extcolor{green}{highlighted} text.\par
+
+\end{document}

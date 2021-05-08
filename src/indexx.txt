@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first HTML document.</title>
+</head>
+<body>
+	<p>This is my first paragraph.</p>
+	<p> This is my second paragraph.</p>
+	<p> I am in <strong>bold</strong>.</p>
+	<p> I am in <i>italics</i>.</p>
+	<p> This is a <mark>highlighted</mark> text.</p>
+
+</body>
+</html>
