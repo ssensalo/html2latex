@@ -14,7 +14,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 --%>
-<%@ page session="false" pageEncoding="UTF-8" contentType="text/html; charset=UTF-8" %>
+<%@ page language="java" session="false" pageEncoding="UTF-8" contentType="text/html; charset=UTF-8" %>
 <%
 java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy");
 request.setAttribute("year", sdf.format(new java.util.Date()));
@@ -31,7 +31,7 @@ request.setAttribute("year", sdf.format(new java.util.Date()));
     <body>
         <div id="wrapper">
             <div id="navigation" class="curved container">
-                <h1 style="padding:0.8rem;"><center>Latex-HTML Converter</center></h1>
+                <h1 style="padding:0.8rem; text-align: center;">Latex-HTML Converter</h1>
                 <br class="separator" />
             </div>
             <div id="upper" class="curved container">
@@ -40,15 +40,38 @@ request.setAttribute("year", sdf.format(new java.util.Date()));
                 </div>
 				<div id="lower">
 				<div class="inputdata">
-					<div class="curved container"></div>
+					<div class="curved container">
+                        <!-- FORM RECIEVES THE CODE TO BE CONVERTED -->
+                        <form action="Converter" method="post" id="convform">
+                            <table style="width:100%; ">
+                                <caption>This Form takes the input syntax format to be converted</caption>
+                                <th scope="col" colspan="2">Enter your HTML code here:</th>    
+                            </table>
+                            <textarea  rows="20" cols="50" name="code" form="convform" placeholder="Enter HTML / LATEX code "></textarea><br/>
+                                
+                            <input type="submit" value="Convert" />
+                        </form>
+                    </div>
 				</div>
 				<div class="outputdata">
-					<div class="curved container"></div>
+					<div class="curved container">
+                        <!-- PRINTS OUTPUT AFTER CONVERSION -->
+                        <tr>
+                            <td>
+                                <% String code = request.getParameter("code"); %>
+                                <a> <% out.println("Converted code"); %> </a>
+                            </td>
+                        </tr>
+                    </div>
 				</div>
 				</div>
-			</div>	
-            <p><span class="corverd copyright">Copyright &copy;2021-${year}.  All Rights Reserved</span></p>
+			</div></div>
+                <br class="separator" />
         </div>
+                <br class="separator" />
+            <div>
+            <p><span class="corverd copyright">Copyright &copy;2021-${year}.  All Rights Reserved</span></p>
+            </div>
     </body>
 
 </html>
