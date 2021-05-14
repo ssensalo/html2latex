@@ -15,7 +15,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 --%>
 <%@ page language="java" session="false" pageEncoding="UTF-8" contentType="text/html; charset=UTF-8" %>
-<%
+<%@ page import="pageNumber.*, java.io.*, java.util.*, javax.servlet.*"%>
+<%@ page import="javax.servlet.http.*" %>
+<% 
 java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy");
 request.setAttribute("year", sdf.format(new java.util.Date()));
 %>
@@ -39,33 +41,36 @@ request.setAttribute("year", sdf.format(new java.util.Date()));
                     <h2>Conversion for html to latex and vice verser</h2>
                 </div>
 				<div id="lower">
-				<div class="inputdata">
-					<div class="curved container">
-                        <!-- FORM RECIEVES THE CODE TO BE CONVERTED -->
-                        <form action="Converter" method="post" id="convform">
-                            <table style="width:100%; ">
-                                <caption>This Form takes the input syntax format to be converted</caption>
-                                <th scope="col" colspan="2">Enter your HTML code here:</th>    
-                            </table>
-                            <textarea  rows="20" cols="50" name="code" form="convform" placeholder="Enter HTML / LATEX code "></textarea><br/>
-                                
-                            <input type="submit" value="Convert" />
-                        </form>
+                    <div class="inputdata">
+                        <div class="curved container">
+                            <!-- FORM RECIEVES THE CODE TO BE CONVERTED -->
+                            <form action="" method="POST" id="convform">
+                                <table style="width:100%; ">
+                                    <caption>This Form takes the input syntax format to be converted</caption>
+                                    <th scope="col" colspan="2">Enter your HTML code here:</th>    
+                                </table>
+                                <textarea  rows="20" cols="50" name="code" form="convform" placeholder="Enter HTML / LATEX code "></textarea><br/>
+                                    
+                                <input type="submit" value="Convert" name="submitBtn" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="outputdata">
+                        <div class="curved container">
+                            <!-- PRINTS OUTPUT AFTER CONVERSION --> 
+                                    <% 
+                                    String conversion = "Get Conversion Response";
+                                    if("Convert".equals(request.getParameter("submitBtn"))) {
+                                        String code = request.getParameter("code");
+                                        conversion = code.replace("","Replaced");
+                                    } %>
+                                    <p style="overflow-wrap: anywhere;"> <% out.println(conversion); %> </p> 
+                            </tr> -->
+                        </div>
                     </div>
 				</div>
-				<div class="outputdata">
-					<div class="curved container">
-                        <!-- PRINTS OUTPUT AFTER CONVERSION -->
-                        <tr>
-                            <td>
-                                <% String code = request.getParameter("code"); %>
-                                <a> <% out.println("Converted code"); %> </a>
-                            </td>
-                        </tr>
-                    </div>
-				</div>
-				</div>
-			</div></div>
+			</div>
+        </div>
                 <br class="separator" />
         </div>
                 <br class="separator" />
